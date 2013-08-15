@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<config>
+   <flags>
+      <!--
+           Debug     - 5+
+           Notice    - 4 (default)
+           Info      - 3
+           Warning   - 2
+           Error     - 1
+           Critical  - 0
+      -->
+      <log_level value="5"/>
+   </flags>
+
+   <sessions>
+      <session type="ccsds" bind_address="0.0.0.0" bind_port="7744" source="44"/>
+      <session type="ccsds" bind_address="0.0.0.0" bind_port="7745" source="45"/>
+      <session type="ccsds" bind_address="0.0.0.0" bind_port="7766" source="66"/>
+      <session type="ccsds" bind_address="0.0.0.0" bind_port="7767" source="67"/>
+      <session type="egnaku" bind_address="0.0.0.0" bind_port="5015" source="15"/>
+      <session type="egnaku" bind_address="0.0.0.0" bind_port="5014" source="14"/>
+      <session type="egnaku" bind_address="0.0.0.0" bind_port="5013" source="13"/>
+      <session type="egnaku" bind_address="0.0.0.0" bind_port="5012" source="12"/>
+      <session type="egnaku" bind_address="0.0.0.0" bind_port="5011" source="11"/>
+ </sessions>
+
+   <output address="0.0.0.0" port="33333" group="225.0.0.1"/>
+</config>

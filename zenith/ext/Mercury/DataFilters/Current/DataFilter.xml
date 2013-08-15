@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<config>
+   <flags>
+      <!--
+           Debug     - 5+
+           Notice    - 4 (default)
+           Info      - 3
+           Warning   - 2
+           Error     - 1
+           Critical  - 0
+      -->
+      <log_level value="5"/>
+      <dictonary value="dict.conf"/>
+   </flags>
+
+   <!--
+      Filter example: sent only frames which have seconds % 2 != 0
+   -->
+	<filter flc="122" mask="010010xx"/>
+
+   <source address="0.0.0.0" port="33333" group="225.0.0.1"/>
+   <bind address="0.0.0.0" port="50015"/>
+</config>
